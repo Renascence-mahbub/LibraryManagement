@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="DEFAULT_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pok.GiftCoupon</class>
+    <class>pok.Orders</class>
+    <class>pok.CustomerType</class>
+    <class>pok.Tables</class>
+    <class>pok.LotteryPost</class>
+    <class>pok.SerializedJavaObjects</class>
+    <class>pok.Packages</class>
+    <class>pok.Departments</class>
+    <class>pok.LotteryCoupon</class>
+    <class>pok.Lists</class>
+    <class>pok.Category</class>
+    <class>pok.CustomerInfo</class>
+    <class>pok.Payments</class>
+    <class>pok.DiscountCoupon</class>
+    <class>pok.StaffInfo</class>
+    <class>pok.StaffpayInfo</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+      <property name="javax.persistence.jdbc.password" value="app"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="app"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
